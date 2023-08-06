@@ -1,0 +1,8 @@
+uuid: 141b6098-0f96-4913-8a77-0e22d62f03de
+langcode: en
+status: true
+dependencies: {  }
+id: new_comments
+label: 'New Comments'
+target_entity_type_id: node
+description: 'New Comment type'

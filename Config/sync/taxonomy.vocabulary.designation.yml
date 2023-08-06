@@ -1,0 +1,8 @@
+uuid: 7dab96e0-3162-43e4-bc06-d95848b6afaa
+langcode: en
+status: true
+dependencies: {  }
+name: Designation
+vid: designation
+description: 'All the positions avaliable in the company'
+weight: 0
