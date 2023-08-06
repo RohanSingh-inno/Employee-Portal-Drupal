@@ -1,0 +1,25 @@
+uuid: 66dcc3de-ec61-41ec-8096-9656e6ad73d6
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:98bde460-99c8-49db-8513-bd1e381c929c'
+  module:
+    - block_content
+  theme:
+    - bootstrap
+id: credit
+theme: bootstrap
+region: footer
+weight: -6
+provider: null
+plugin: 'block_content:98bde460-99c8-49db-8513-bd1e381c929c'
+settings:
+  id: 'block_content:98bde460-99c8-49db-8513-bd1e381c929c'
+  label: Credit
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

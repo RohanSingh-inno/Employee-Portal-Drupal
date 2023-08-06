@@ -1,0 +1,8 @@
+uuid: ece97a7b-4899-4c96-8c57-fa2d6a741b90
+langcode: en
+status: true
+dependencies: {  }
+name: Skills
+vid: skills
+description: 'All the skill that are used in the organization.'
+weight: 0

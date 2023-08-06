@@ -1,0 +1,137 @@
+uuid: 772c7540-a988-4cc9-a74f-4c7850b67cf4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.project.field_company_logo
+    - field.field.node.project.field_customer_name
+    - field.field.node.project.field_start_date
+    - field.field.node.project.field_team
+    - node.type.project
+  module:
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 33-67
+        components:
+          29972105-67f1-46fa-88f1-f9f627179258:
+            uuid: 29972105-67f1-46fa-88f1-f9f627179258
+            region: second
+            configuration:
+              id: 'field_block:node:project:title'
+              label: Title
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: true
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          cf9c759c-2931-48b7-afba-1d863d943d16:
+            uuid: cf9c759c-2931-48b7-afba-1d863d943d16
+            region: second
+            configuration:
+              id: 'field_block:node:project:field_customer_name'
+              label: 'Customer Name'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          816a0c15-82b3-406f-bf2c-affed5ff0d78:
+            uuid: 816a0c15-82b3-406f-bf2c-affed5ff0d78
+            region: second
+            configuration:
+              id: 'field_block:node:project:field_team'
+              label: Team
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          d12f30cb-1511-4710-a596-02ec8eb32209:
+            uuid: d12f30cb-1511-4710-a596-02ec8eb32209
+            region: second
+            configuration:
+              id: 'field_block:node:project:field_start_date'
+              label: 'Start Date'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: datetime_default
+                label: above
+                settings:
+                  timezone_override: ''
+                  format_type: medium
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          46793c19-0a4f-4156-8a04-8724f8b7f3f1:
+            uuid: 46793c19-0a4f-4156-8a04-8724f8b7f3f1
+            region: first
+            configuration:
+              id: 'field_block:node:project:field_company_logo'
+              label: 'Company Logo'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: image
+                label: above
+                settings:
+                  image_link: ''
+                  image_style: medium
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.project.teaser
+targetEntityType: node
+bundle: project
+mode: teaser
+content: {  }
+hidden:
+  field_company_logo: true
+  field_customer_name: true
+  field_start_date: true
+  field_team: true
+  links: true

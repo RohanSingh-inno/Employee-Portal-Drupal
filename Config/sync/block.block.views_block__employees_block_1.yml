@@ -1,0 +1,29 @@
+uuid: 7f8fe55f-681d-4ac7-94fb-f5cf7a1a3c65
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.employees
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap
+id: views_block__employees_block_1
+theme: bootstrap
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:employees-block_1'
+settings:
+  id: 'views_block:employees-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

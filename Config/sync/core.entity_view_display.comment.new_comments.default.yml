@@ -1,0 +1,45 @@
+uuid: 50018b4d-20f0-4850-926b-ab4c2c7e7a40
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.new_comments
+    - field.field.comment.new_comments.comment_body
+    - field.field.comment.new_comments.field_email
+    - field.field.comment.new_comments.field_homepage_1
+    - field.field.comment.new_comments.field_name_1
+  module:
+    - layout_builder
+    - text
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: comment.new_comments.default
+targetEntityType: comment
+bundle: new_comments
+mode: default
+content:
+  comment_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_name_1:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_email: true
+  field_homepage_1: true

@@ -1,0 +1,52 @@
+uuid: cb23258e-de88-4354-ba09-bc81f6158d30
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.project.field_company_logo
+    - field.field.node.project.field_customer_name
+    - field.field.node.project.field_start_date
+    - field.field.node.project.field_team
+    - node.type.project
+  module:
+    - datetime
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.project.full
+targetEntityType: node
+bundle: project
+mode: full
+content:
+  field_customer_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_start_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_team:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  field_company_logo: true
+  links: true

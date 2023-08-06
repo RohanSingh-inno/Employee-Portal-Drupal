@@ -1,0 +1,20 @@
+uuid: 5a3b0598-adc4-4b11-b8e9-981fa58d281c
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.field_experience
+field_name: field_experience
+entity_type: user
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

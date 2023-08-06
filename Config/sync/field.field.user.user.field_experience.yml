@@ -1,0 +1,24 @@
+uuid: faa229b6-055e-435a-be45-cda77fbd59fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_experience
+  module:
+    - user
+id: user.user.field_experience
+field_name: field_experience
+entity_type: user
+bundle: user
+label: Experience
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: 75
+  prefix: ''
+  suffix: yrs
+field_type: integer
